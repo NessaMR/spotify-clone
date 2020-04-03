@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Música para todos - Spotify</title>
+    <link rel="icon" href="images/favicon.png">
 
-    <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="estilo.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,12 +20,39 @@
   </head>
   <body>
 
-    
+  <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparent">
+    <div class="container">
+      <div class="navbar-header">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#navbar">
+          <!--Recurso para leitores de tela-->
+          <span class="sr-only">alternar navegação</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a href="index.html" class="navbar-brand">
+          <span class="img-logo"></span>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="">Premium</a></li>
+          <li><a href="">Ajuda</a></li>
+          <li><a href="">Baixar</a></li>
+          <li role="separator" class="divisor"></li>
+          <li><a href="">Inscrever</a></li>
+          <li><a href="">Entrar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
